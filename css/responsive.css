@@ -1,0 +1,68 @@
+@media (max-width: 1199.98px) {
+    .banner_text h1{
+        font-size: 100px;
+        line-height: 120px;
+    }
+    .banner_text h2{
+        font-size: 62px;
+    }
+}
+
+@media (max-width: 991.98px) {
+    .banner_text h1{
+        font-size: 80px;
+        line-height: 100px;
+    }
+    
+    .banner_text h2{
+        font-size: 52px;
+    }
+    .testimonial-carousel{
+        padding: 0 60px;
+    }
+    .slider-text p{
+        font-size: 18px;
+    }
+    .navigation{
+        padding: 20px 0;
+    }
+    .navbar .navbar-nav .nav-item{
+        padding: 20px;
+    }
+    .navigation .navbar-collapse {
+        background: rgba(163, 118, 118, 0.9);
+        border-radius: 5px;
+        margin-top: 20px;
+    }
+    .navigation.sticky .navbar-collapse {
+        background: rgba(47, 47, 47,.1);
+    }
+    .story-image {
+        margin-bottom: 10px;
+    }
+    .single_team {
+        margin-bottom: 10px;
+    }
+}
+
+@media (max-width: 767.98px) {
+
+}
+@media (max-width: 575.98px) {
+    .banner_text h1{
+        font-size: 50px;
+        line-height: 70px;
+    }
+    
+    .banner_text h2{
+        font-size: 42px;
+    }
+    .navigation{
+        padding: 20px 15px;
+    }
+    
+    .team_social a{
+        width: 51px;
+    }
+    
+}

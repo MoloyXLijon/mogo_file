@@ -1,0 +1,523 @@
+/*Google fonts*/
+@import url('https://fonts.googleapis.com/css?family=Kaushan+Script|Montserrat:300,400,500,600,700|Roboto:300,400,700&display=swap');
+/*default css*/
+*{
+    margin: 0;
+    padding: 0;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+}
+body{
+    font-family:sans-serif;
+}
+a{
+    display: inline-block;
+    text-decoration: none;
+}
+img{
+    max-width: 100%;
+}
+p{
+    font-family: 'Roboto', sans-serif;
+    font-size: 15px;
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6{
+    font-family: 'Montserrat', sans-serif;
+    color: #333;
+}
+/*default css end*/
+
+/*====================
+    navber css
+=====================*/
+.navigation {
+	position: absolute;
+	left: 0;
+	width: 100%;
+	top: 0;
+	z-index: 9999999;
+}
+.navbar .navbar-nav .nav-item {
+    padding: 35px 25px;
+}
+.navbar .navbar-nav .nav-item:last-child {
+    padding-right: 0 !important;
+}
+.navbar .navbar-nav .nav-item .nav-link{
+    color: #ffffff;
+    padding: 0;
+    position: relative;
+    padding-bottom: 5px;
+}
+.navbar .navbar-nav .nav-item.active .nav-link{
+    color: #fce38a;
+}
+.navbar .navbar-nav .nav-item .nav-link:hover{
+    color: #fce38a;
+}
+.navbar .navbar-nav .nav-item .nav-link:before{
+    position: absolute;
+    content: '';
+    right: 0;
+    top: 100%;
+    width: 0;
+    height: 3px;
+    background: #fce38a;
+    transition: all .3s linear;
+}
+.navbar .navbar-nav .nav-item.active .nav-link:before{
+    width: 100%;
+}
+.navbar .navbar-nav .nav-item .nav-link:hover:before{
+    width: 100%;
+}
+.sticky .navbar .navbar-nav .nav-item {
+    padding: 25px;
+}
+/*====== Sticky Menubar ======*/
+.navigation.sticky {
+	position: fixed;
+	top: 0;
+	left: 0;
+	width: 100%;
+	background: linear-gradient(to bottom ,rgba(243, 129, 129, 0.99) ,rgba(252, 227, 90, 0.95));
+	z-index: 999999999;
+    border-bottom: 1px solid #cecece;
+    -webkit-box-shadow: 0px 0px 191px 0px rgba(0,0,0,0.06);
+    box-shadow: 0px 0px 191px 0px rgba(0,0,0,0.06);
+    -webkit-animation: sticky .4s;
+    animation: sticky .4s;
+}
+
+@-webkit-keyframes sticky {
+    0%{
+        -webkit-transform: translateY(-100%);
+        transform: translateY(-100%)
+    }
+    100%{
+        -webkit-transform: translateY(0%);
+        transform: translateY(0%)
+    }
+}
+
+@keyframes sticky {
+    0%{
+        -webkit-transform: translateY(-100%);
+        transform: translateY(-100%)
+    }
+    100%{
+        -webkit-transform: translateY(0%);
+        transform: translateY(0%)
+    }
+}
+
+/*====== Menubar ======*/
+
+/*====================
+    BANNER CSS
+=====================*/
+.banner_area{
+    height: 100vh;
+    background-position: center !important;
+    background-repeat: no-repeat !important;
+    background-size: cover !important;
+}
+
+.banner_overlay{
+    background: linear-gradient(to bottom,rgba(243, 129, 129, 0.90),rgba(252, 227, 138, 0.90));
+    height: 100%;
+}
+.banner_text h2{
+    font-family: 'Kaushan Script', cursive;
+    font-size: 72px;
+    color: #ffffff;
+}
+.banner_text h1 {
+    font-size: 150px;
+    text-transform: uppercase;
+    color: #ffffff;
+    font-weight: 700;
+    position: relative;
+    line-height: 150px;
+    margin-bottom: 25px;
+}
+.banner_text h1:before{
+    position: absolute;
+    content: '';
+    left: 50%;
+    top: 100%;
+    background: #ffffff;
+    width: 160px;
+    height: 3px;
+    transform: translateX(-50%);
+}
+.banner_text .banner_btn{
+    padding: 12px 30px;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 700;
+    text-transform: uppercase;
+    border: 3px solid #fff;
+    color: #ffffff;
+}
+/**/
+/*Story-about*/
+/**/
+.section-title h4{
+    font-family: 'Kaushan Script', cursive;
+}
+.section-title h2 {
+    font-size: 30px;
+    font-weight: 700;
+}
+.separator {
+    height: 3px;
+    width: 60px;
+    background: #f38181;
+    display: inline-block;
+}
+.section-title p {
+    color: #999999;
+    padding: 27px 83px;
+}
+.story-image {
+    position: relative;
+}
+
+.super-team {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    background: linear-gradient(0deg,rgba(250,227, 138,.8),rgba(243,129,129,.8));
+    opacity: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+.super-team:hover{
+    opacity: 1;
+    transition: all .3s linear;
+}
+.super-team i {
+    color: #fff;
+    font-size: 25px;
+}
+.super-team h2 {
+    color: #fff;
+    font-size: 22px;
+    padding-top: 13px;
+}
+/*  */
+/* counter section strat */
+/*  */
+.counter{
+    padding: 50px 0;
+    background-color: #95e1d3;
+    color: #fff;
+    margin: 50px 0;
+}
+.counter-number h2 {
+    color: #fff !important;
+    font-size: 72px;
+}
+/*  */
+/* service css begin */
+/*  */
+.service_wrapper {
+    margin-top: 52px;
+}
+.single_service {
+	margin-bottom: 100px;
+	display: inline-block;
+}
+.single_service .icon {
+    width: 10%;
+}
+.single_service .icon span i {
+	color: #95e1d3;
+	font-size: 25px;
+}
+.single_service .service_content {
+	width: 90%;
+}
+.single_service .service_content .service_title h4{
+    font-size: 14px;
+    text-transform: uppercase;
+    color: #333333;
+}
+.single_service .service_content .service_discp p {
+	font-size: 14px;
+	color: #999999;
+	padding-right: 46px;
+}
+/* service css end */
+/*  */
+
+
+
+/* slider area */
+/*  */
+.slick-slide:focus{
+    outline: none;
+}
+.slider-area {
+    background: #f8f8f8;
+    padding: 60px 0;
+}
+
+.testimonial-carousel {
+    padding: 0 100px;
+}
+
+.testimonial-carousel .slick-arrow:before {
+    font-family: FontAwesome;
+    color: #cccccc;
+}
+
+.testimonial-carousel .slick-prev:before {
+    content: "\f053";
+}
+
+.testimonial-carousel .slick-next:before {
+    content: "\f054";
+}
+
+.testimonial-carousel .slick-prev {
+    left: 0;
+}
+
+.testimonial-carousel .slick-next {
+    right: 0;
+}
+.slider-text p {
+    color: #999999;
+    font-size: 24px;
+    font-weight: 300;
+}
+.slider-text .slider-link {
+    font-family: 'Kaushan Script', cursive;
+    font-size: 24px;
+}
+/*  */
+/*team area css*/
+/*  */
+.single_team{
+    position: relative;
+}
+.team_overlay {
+    position: absolute;
+    left: 0;
+    top: 0;
+    background: -webkit-gradient(linear,left top, left bottom,from(rgba(245, 134, 134, 0.90)),to(rgba(255, 229, 137, 0.90)));
+    background: linear-gradient(to bottom,rgba(245, 134, 134, 0.90),rgba(255, 229, 137, 0.90));
+    width: 100%;
+    height: 100%;
+    opacity: 0;
+    visibility: hidden;
+    -webkit-transition: all .3s linear;
+    transition: all .3s linear;
+}
+.single_team:hover .team_overlay{
+    opacity: 1;
+    visibility: visible;
+}
+.team_social{
+    position: absolute;
+    left: 0;
+    top: 50%;
+    -webkit-transform: translateY(-50%);
+    transform: translateY(-50%);
+    width: 100%;
+    text-align: center;
+}
+.team_social a {
+	font-size: 26px;
+	color: #f38181;
+	background: #fce38a;
+	width: 56px;
+	height: 56px;
+	line-height: 56px;
+	text-align: center;
+	margin-left: -4px;
+	border-right: 1px solid #f38181;
+    -webkit-transition: all .3s linear;
+    transition: all .3s linear;
+}
+.team_social a:hover{
+    color: #fff;
+    background: #f38181;
+}
+/*  */
+/* footer area */
+/*  */
+.fast-footer {
+    margin-top: 50px;
+    background: #f8f8f8;
+    padding-top: 30px;
+}
+.footer-img-area h2 {
+    color: #cccccc;
+    font-size: 46px;
+    font-weight: 900;
+}
+
+.footer-img-area p {
+    color: #999999;
+}
+
+.footer-img-area h3 {
+    font-size: 18px;
+    font-weight: 900;
+}
+.footer-form span {
+    padding-right: 10px;
+    color: #999999;
+}
+.footer-form i {
+    padding-right: 9px;
+}
+.widget .widget-title {
+    font-size: 14px;
+    text-transform: uppercase;
+    color: #333;
+    margin-bottom: 35px;
+}
+.footer-icon i {
+    color: #95e1d3;
+    padding-right: 12px;
+    font-size: 18px;
+}
+.tcolor {
+    background: #95e1d3;
+}
+.widget-text {
+    font-size: 13px;
+    color: #333;
+}
+.widget-date {
+    font-size: 13px;
+    color: #999999;
+}
+.widget-txt {
+    font-size: 13px;
+    color: #333;
+    font-weight: 300;
+    padding-top: 15px;
+}
+.bottom-footer p {
+    font-size: 17px;
+}
+.bottom-footer a {
+    color: #f4a4a4;
+}
+
+
+/* AFTER COPY THE HTML ADD THIS CSS TO YOUR style.css FILE */
+.back-to-top {
+    position: fixed;
+    right: 40px;
+    bottom: 55px;
+    width: 50px;
+    height: 50px;
+    line-height: 46px;
+    background-color: #95E1D3;
+    color: #8ca270;
+    font-size: 30px;
+    border-radius: 15px;
+    z-index: 99;
+    text-align: center;
+    -webkit-transition: all 0.4s linear;
+    transition: all 0.5s linear;
+    display: none;
+}
+.back-to-top:hover{
+    color: #fff;
+    background-color: #EAA685;
+}
+/*  */
+/* preloader */
+/*  */
+.preloader{
+    position: fixed;
+    background-color: #E4AB79;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 9999999999;
+}
+.graph {
+	width: 108px;
+	height: 50px;
+	position: relative;
+	left: 50%;
+	top: 50%;
+	-webkit-transform: translate(-50%,-50%);
+	transform: translate(-50%,-50%);
+}
+.sk-cube-grid {
+  width: 50px;
+  height: 50px;
+}
+
+.sk-cube-grid .sk-cube {
+  width: 33%;
+  height: 33%;
+  background-color: #95E1D3;
+  float: left;
+  -webkit-animation: sk-cubeGridScaleDelay 1.3s infinite ease-in-out;
+          animation: sk-cubeGridScaleDelay 1.3s infinite ease-in-out;
+}
+.sk-cube-grid .sk-cube1 {
+  -webkit-animation-delay: 0.2s;
+          animation-delay: 0.2s; }
+.sk-cube-grid .sk-cube2 {
+  -webkit-animation-delay: 0.3s;
+          animation-delay: 0.3s; }
+.sk-cube-grid .sk-cube3 {
+  -webkit-animation-delay: 0.4s;
+          animation-delay: 0.4s; }
+.sk-cube-grid .sk-cube4 {
+  -webkit-animation-delay: 0.1s;
+          animation-delay: 0.1s; }
+.sk-cube-grid .sk-cube5 {
+  -webkit-animation-delay: 0.2s;
+          animation-delay: 0.2s; }
+.sk-cube-grid .sk-cube6 {
+  -webkit-animation-delay: 0.3s;
+          animation-delay: 0.3s; }
+.sk-cube-grid .sk-cube7 {
+  -webkit-animation-delay: 0s;
+          animation-delay: 0s; }
+.sk-cube-grid .sk-cube8 {
+  -webkit-animation-delay: 0.1s;
+          animation-delay: 0.1s; }
+.sk-cube-grid .sk-cube9 {
+  -webkit-animation-delay: 0.2s;
+          animation-delay: 0.2s; }
+
+@-webkit-keyframes sk-cubeGridScaleDelay {
+  0%, 70%, 100% {
+    -webkit-transform: scale3D(1, 1, 1);
+            transform: scale3D(1, 1, 1);
+  } 35% {
+    -webkit-transform: scale3D(0, 0, 1);
+            transform: scale3D(0, 0, 1);
+  }
+}
+
+@keyframes sk-cubeGridScaleDelay {
+  0%, 70%, 100% {
+    -webkit-transform: scale3D(1, 1, 1);
+            transform: scale3D(1, 1, 1);
+  } 35% {
+    -webkit-transform: scale3D(0, 0, 1);
+            transform: scale3D(0, 0, 1);
+  }
+}
